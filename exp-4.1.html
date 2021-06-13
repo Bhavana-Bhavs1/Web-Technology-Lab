@@ -1,0 +1,48 @@
+<html>
+<head><h1 align=center>Welcome to Validation
+Checking</h1><hr width=50%>
+<script language="javascript">
+ function validation()
+{
+var x=f.un.value;var len=x.length;
+var val=x.charCodeAt(0); var p=f.pw.value;
+var c=f.cpw.value;var a=f.email.value;
+var atpos=a.indexOf("@");var dotpos=a.lastIndexOf(".");
+if(len<6||x==""||x==null)
+{
+alert("check your username! must be minimum 6 characters");
+}
+else if(val<65 || val>90&&val<97 || val>122)
+{
+alert("username must be begin with an alphabet");
+return fasle;
+}
+else if(p==" || c==" || p.length<6 || c.length<6 || p!=c)
+{
+alert("password and confirm password should be same and greater than 6 characters!");
+return false;
+}
+else if(atpos<6 || dotpos<atpos+6 || dotpos+2>=a.length)
+{
+alert("Not a Valid email id");
+return false;
+}
+else
+alert("Congratulations!you have submitted successfully");
+}
+</script>
+</head>
+<body>
+<table align=center border=I>
+<form name="f" action="success.html" onsubmit="return validation();" method="post">
+<tr><td>User Name:</td>
+<td><input type="text" name="un"/></td></tr>
+<tr><td>Password:</td>
+<td><input type="password" name="pw"/></td></tr>
+<tr><td>Confirm Password:</td>
+<td><input type="password" name="cpw"/></td></tr>
+<tr><td>E-mail ID:</td>
+<td><input type="text" name="email"/></td></tr>
+<tr><td></td>
+<td><input type="Submit" name="Submit"/></td></tr>
+</form></table></body></html>

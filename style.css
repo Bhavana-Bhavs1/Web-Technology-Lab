@@ -1,0 +1,18 @@
+h1
+{
+ color:red;
+ font-family:caStellar;font-size:22pt;
+ text-decoration:underline;
+}
+h2
+{
+ color:blue;
+ font-family:Chiller;font-size:18pt;
+ text-decoration:overline;
+}
+p
+{
+ color:magenta;
+ font-family:Trebuchet MS;font-size:14pt;
+ font-style:italic;
+}
